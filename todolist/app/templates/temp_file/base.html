@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="nav">
+        <ol id="ol">
+            <li>Home</li>
+            <li>To-Do List</li>
+            <li>History</li>
+            <li>Contact</li>
+        </ol>
+    </div>
+
+
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

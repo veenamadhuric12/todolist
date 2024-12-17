@@ -1,0 +1,13 @@
+{% extends 'temp_file/base.html' %}
+{% block content %}
+    
+    <div>
+        <div id="span">To-Do List</div><br><br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <button id="btn1">Task</button><input type="text" name="" id="inp1" placeholder="Add the task you are going to do"><br><br>
+            <button id="btn2">Description</button><input type="text" name="" id="inp2"><br><br>
+            <button type="submit" id="sub">SUBMIT</button>
+        </form>
+    </div>
+{% endblock content %}
